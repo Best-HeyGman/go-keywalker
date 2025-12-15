@@ -23,6 +23,12 @@ The file format I created to map out a keyboard is as follows:
 
 I have chosen this format to make mapping a new keyboard as easy as possible. I wanted a format where you don't have to look up from the keyboard while mapping it, because the task is boring enough for you to get easily distracted but complex enough that you will make mistakes if you do.
 
+## Why not use the hashcat/kwprocessor keymap file format?
+Because it distorts how a real keyboard looks. A real keyboard isn't a perfect chessboard. On the kwprocessor layout, you would think that "e" is a neighbour of "2", which isn't really the case on a real keyboard.  
+On the other hand, of course, it gives you the possibility to define patterns.  
+.nsk does not, because it is already a graph and not a grid with coordinates.  
+I chose to focus on the recognition of keyboard walks and not the generation, and for recognition the .nsk format reduces false positives.
+
 ## Mapping out a new keyboard
 I suggest doing it this way:
 1. Start in one corner of the keyboard.
