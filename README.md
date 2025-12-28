@@ -58,3 +58,12 @@ I also have a couple of ideas myself, but I don't really need them personally, s
 	+ Should be very easy to implement, because every walk done from a particular starting key is independent of each other. 
 	+ I've already split up the functions in libkeywalk in a way that I can easily add this feature.
 	+ But the performance without multithreading is already really good, so I haven't bothered yet.
+	
+# Todo for v2.0.0
+- Multithreaded checking
+- Multiple dictionaries at the same time for checking
+- Support for hashcat/kwprocessor keymaps
+- Implement jumps on the keyboard for checking
+	+ With a configurable maximum jump distance per jump
+	+ And with a configurable maximum amount of jumps allowed per keywalk
+- Implement alternative key assignments like capital letters etc.
